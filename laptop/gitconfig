@@ -1,0 +1,19 @@
+[user]
+    email = andrew.g.m.ryan@gmail.com
+    name = Andy
+[alias]
+    co = checkout
+    ci = commit
+    st = status
+    br = branch
+    dt = difftool
+    hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
+    type = cat-file -t
+    dump = cat-file -p
+[core]
+	editor = vim
+	excludesfile = /home/andy/.gitignore
+[diff]
+	tool = meld
+[difftool]
+	prompt = false

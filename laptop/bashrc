@@ -1,0 +1,23 @@
+
+# vim aliases
+alias v='vim '
+alias g='gvim '
+
+# cd software
+alias cds='cd ~/Software/home/'
+
+# git aliases
+alias gs='git status '
+alias ga='git add '
+alias gb='git branch '
+alias gc='git commit '
+alias go='git checkout '
+alias gk='gitk --all&'
+
+# virtualenvwrapper settings
+export WORKON_HOME=$HOME/.virtualenvs
+export PROJECT_HOME=$HOME/Software
+source /usr/local/bin/virtualenvwrapper.sh
+
+# PATH
+export PATH=~/.local/bin:$PATH

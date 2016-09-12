@@ -1,0 +1,12 @@
+
+# Python eggs
+*.egg-info
+
+# Python 2.x compiled modules
+*.pyc
+
+# C/Fortran object code
+*.o
+
+# vim swap files
+*.swp

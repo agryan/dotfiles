@@ -1,0 +1,18 @@
+#!/bin/bash
+
+# Link dotfiles
+cd $HOME/Software/dotfiles
+for dotfile in bashrc vimrc gitconfig gitignore ; do
+    if [[ -e $HOME/.$dotfile ]] ; then
+        echo "$HOME/.$dotfile already exists"
+    else
+        echo "linking $PWD/$dotfile to $HOME/.$dotfile"
+        ln -s $PWD/$dotfile $HOME/.$dotfile
+    fi
+done
+
+# Vundle
+if [[ ! -e ~/.vim/bundle/Vundle.vim ]] ; then
+    mkdir -p ~/.vim/bundle
+    git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+fi
